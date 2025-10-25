@@ -3,78 +3,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aplicación de accesibilidad</title>
+    <title>Tienda Local D3</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="assets/shop32.ico" type="image/x-icon" />
   </head>
 
   <body>
     <header>
-      <nav>
-        <h1>Aplicación de accesibilidad</h1>
-        <div>
-          <a href="#features">Características</a>
-          <a href="#contacto">Contacto</a>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#">
+            <img src="assets/shop32.png" alt="" />
+            <p>La Tienda Local D3</p>
+          </a>
         </div>
+
+        <ul class="navbar-links">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
       </nav>
     </header>
 
     <main>
-      <section class="hero">
-        <h2>La aplicación que simplifica tu día</h2>
-        <p>
-          Organiza tus tareas, mejora tu productividad y alcanza tus metas con
-          facilidad.
-        </p>
-        <a href="#registro" class="button" tabindex="0">Pruébala gratis</a>
+      <section id="hero" class="hero">
+        <h1>Bienvenido a nuestra tienda local D3</h1>
+        <p>Aqui encontraras todo tipo de productos comestibles.</p>
+        <div>
+          <select name="categoria-producto" id="categoria-producto">
+            <option value="frutas">Frutas</option>
+            <option value="verduras">Verduras</option>
+          </select>
+          <input
+            type="search"
+            id="buscar"
+            placeholder="Escribir productos..."
+          />
+          <label for="buscar">Buscar 🔎</label>
+        </div>
       </section>
 
-      <section class="features" id="features">
-        <article tabindex="0">
-          <img
-            src="assets/icons8-interface-color-96.png"
-            alt="Icono de interfaz intuitiva"
-            width="80"
-            height="80"
-          />
-          <h3>Interfaz intuitiva</h3>
-          <p>
-            Diseñada para que puedas empezar sin complicaciones desde el primer
-            momento.
-          </p>
-        </article>
-        <article tabindex="0">
-          <img
-            src="assets/icons8-lock-portrait-96.png"
-            alt="Icono de seguridad de datos"
-            width="80"
-            height="80"
-          />
-          <h3>Seguridad total</h3>
-          <p>
-            Tus datos están protegidos con encriptación avanzada y copias de
-            seguridad automáticas.
-          </p>
-        </article>
-        <article tabindex="0">
-          <img
-            src="assets/icons8-wrench-96.png"
-            alt="Icono de soporte técnico"
-            width="80"
-            height="80"
-          />
-          <h3>Soporte 24/7</h3>
-          <p>
-            Estamos disponibles siempre que necesites ayuda o tengas alguna
-            pregunta.
-          </p>
-        </article>
+      <section id="productos" class="productos">
+        <div class="resultado-productos">
+          <img src="assets/manzana.jpg" alt="Manzana" />
+          <h2>Manzana</h2>
+          <p>1000 COP</p>
+          <button>Ver</button>
+        </div>
+        <div class="resultado-productos">
+          <img src="assets/papa.jpg" alt="Papa" />
+          <h2>Papa</h2>
+          <p>1000 COP</p>
+          <button>Ver</button>
+        </div>
+        <div class="resultado-productos">
+          <img src="assets/naranja.jpg" alt="Naranja" />
+          <h2>Naranja</h2>
+          <p>1000 COP</p>
+          <button>Ver</button>
+        </div>
+        <div class="resultado-productos">
+          <img src="assets/limon.jpg" alt="Limon" />
+          <h2>Limon</h2>
+          <p>1000 COP</p>
+          <button>Ver</button>
+        </div>
+        <div class="resultado-productos">
+          <img src="assets/cebolla.jpg" alt="Cebolla" />
+          <h2>Cebolla</h2>
+          <p>1000 COP</p>
+          <button>Ver</button>
+        </div>
+        <div class="resultado-productos">
+          <img src="assets/lechuga.jpg" alt="Lechuga" />
+          <h2>Lechuga</h2>
+          <p>1000 COP</p>
+          <button>Ver</button>
+        </div>
       </section>
     </main>
 
-    <footer id="contacto">
-      <p>
-        &copy; 2025 Aplicación de accesibilidad. Todos los derechos reservados.
-      </p>
+    <footer>
+      <p>© 2025 Tienda Local D3</p>
     </footer>
   </body>
 </html>
